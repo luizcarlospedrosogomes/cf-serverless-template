@@ -1,0 +1,15 @@
+{
+  "name": "managed-html5-runtime-basic-mta",
+  "version": "1.0.0",
+  "dependencies": {
+    "mbt": "^1.2.7"
+  },
+  "scripts": {
+    "build:mta": "mbt build",
+    "copy": "copyfiles --up 1 ./build/**/* HTML5Module",
+    "replace": "copyfiles --up 1 forReplace/manifest.json HTML5Module"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
+  }
+}
